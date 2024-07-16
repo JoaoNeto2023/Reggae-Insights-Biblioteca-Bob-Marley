@@ -13,7 +13,10 @@ def get_sentiment(text):
 
 # Adicionar a análise de sentimentos aos dados
 for song in data:
-    song['sentiment'] = get_sentiment(song['lyrics'])
+    if song['lyrics']:  # Verifica se há letras disponíveis
+        song['sentiment'] = get_sentiment(song['lyrics'])
+    else:
+        song['sentiment'] = None
 
 # Converter os dados em um DataFrame do Pandas
 df = pd.DataFrame(data)
