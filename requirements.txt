@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+lyricsgenius
+textblob
+vaderSentiment
+plotly
+dash
+streamlit
+pandas
+jupyter
